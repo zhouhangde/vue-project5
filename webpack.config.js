@@ -23,6 +23,8 @@ module.exports = {
     plugins: [
         new VueLoaderPlugin()
       ],
+    //  devtool 用于方便调试错误出现的文件，否则会出现在build.js
+    devtool: '#eval-source-map',
     module: {
         rules: [
             {
