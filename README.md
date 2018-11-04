@@ -22,7 +22,7 @@ https://segmentfault.com/a/1190000012789253
   npm i webpack webpack-dev-server --save-dev
   npm run dev
   npm run build
-
+  .babelrc  此文件为编译es6为es5的配置
   应用商店安装easy sass编译scss
   npm i node-sass css-loader vue-style-loader sass-loader --save-dev
   npm i babel-core babel-loader babel-preset-env babel-preset-stage-3 --save-dev
@@ -42,3 +42,23 @@ https://segmentfault.com/a/1190000012789253
       new VueLoaderPlugin()
     ]
   }
+
+
+  npm run build用于打包文件
+  npm i cross-env --save-dev   在实际发布时，会对文件进行压缩，缓存，分离等等优化处理
+
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  设置了环境变量，打包时，NODE_ENV是production即生产环境
+  生产环境下打包会发现最终压缩体积更小
+
+  <!-- 上述不为webpacke的写法
+  用于生产环境还是正式环境打包，以下为webpack4的写法 -->
+  "scripts": {
+    "start": "webpack --mode production",
+    "build": "webpack --mode development"
+  },
+  npm run start即生产环境
+  npm run build为开发环境
