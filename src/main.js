@@ -3,10 +3,20 @@ import Vue from 'vue';
 
 import './style/common.scss';
 
+
+Vue.component('my-component', {
+  template: '<img :src="url" />',
+  data() {
+    return {
+      url: require('./img/logo.png')
+    }
+  }
+})
+
 var app = new Vue({
   el: '#app',
   data: {
-    message: 'Hello Vue!'
+    message: 'Hello Vue !'
   },
   methods: {
     async fetchData() {
@@ -15,6 +25,6 @@ var app = new Vue({
     }
   },
   created() {
-    this.fetchData();
+    this.fetchData()
   }
 });

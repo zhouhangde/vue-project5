@@ -28,3 +28,4 @@ https://segmentfault.com/a/1190000012789253
   npm i babel-core babel-loader babel-preset-env babel-preset-stage-3 --save-dev
   npm i babel-polyfill --save-dev
   npm i babel-loader@7 --save-dev(单独安的-否则报错)
+  npm i file-loader --save-dev     把图片也当成模块引入
