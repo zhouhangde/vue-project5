@@ -1,5 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
+
+// 解决加载单文件组件报错
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
