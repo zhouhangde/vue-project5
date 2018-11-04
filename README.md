@@ -26,4 +26,5 @@ https://segmentfault.com/a/1190000012789253
   应用商店安装easy sass编译scss
   npm i node-sass css-loader vue-style-loader sass-loader --save-dev
   npm i babel-core babel-loader babel-preset-env babel-preset-stage-3 --save-dev
-
+  npm i babel-polyfill --save-dev
+  npm i babel-loader@7 --save-dev(单独安的-否则报错)
