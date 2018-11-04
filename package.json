@@ -1,0 +1,33 @@
+{
+  "name": "vue-project5",
+  "version": "1.0.0",
+  "description": "我的vue项目-前后台分离",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --open --hot",
+    "build": "webpack --progress --hide-modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhouhangde/vue-project5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhouhangde/vue-project5/issues"
+  },
+  "homepage": "https://github.com/zhouhangde/vue-project5#readme",
+  "dependencies": {
+    "vue": "^2.5.17",
+    "webpack-cli": "^3.1.2"
+  },
+  "devDependencies": {
+    "css-loader": "^1.0.1",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "vue-style-loader": "^4.1.2",
+    "webpack": "^4.24.0",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
