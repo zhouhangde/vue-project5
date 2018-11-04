@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
     entry: ['babel-polyfill', './src/main.js'],
@@ -17,6 +18,9 @@ module.exports = {
             'vue$': 'vue/dist/vue.esm.js'
         }
     },
+    plugins: [
+        new VueLoaderPlugin()
+      ],
     module: {
         rules: [
             {
@@ -56,6 +60,25 @@ module.exports = {
                 loader: 'file-loader',
                 options: {
                     name: '[name].[ext]?[hash]'
+                }
+            },
+            {
+                // 使用单文件组件
+                test: /\.vue$/,
+                loader: 'vue-loader',
+                options: {
+                    loaders: {
+                        'scss': [
+                            'vue-style-loader',
+                            'css-loader',
+                            'sass-loader'
+                        ],
+                        'sass': [
+                            'vue-style-loader',
+                            'css-loader',
+                            'sass-loader?indentedSyntax'
+                        ]
+                    }
                 }
             }
            

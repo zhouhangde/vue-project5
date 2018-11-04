@@ -29,3 +29,16 @@ https://segmentfault.com/a/1190000012789253
   npm i babel-polyfill --save-dev
   npm i babel-loader@7 --save-dev(单独安的-否则报错)
   npm i file-loader --save-dev     把图片也当成模块引入
+  npm i vue-loader vue-template-compiler --save-dev    使用单文件组件
+
+  <!-- Vue加载单文件使用vue-loader报错 -->
+  解决https://blog.csdn.net/MessageBox_/article/details/81434193
+  // 在webpack.config.js中添加如下
+  const VueLoaderPlugin = require('vue-loader/lib/plugin')
+
+  module.exports = {
+    // ...
+    plugins: [
+      new VueLoaderPlugin()
+    ]
+  }
