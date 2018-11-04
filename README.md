@@ -23,3 +23,7 @@ https://segmentfault.com/a/1190000012789253
   npm run dev
   npm run build
 
+  应用商店安装easy sass编译scss
+  npm i node-sass css-loader vue-style-loader sass-loader --save-dev
+  npm i babel-core babel-loader babel-preset-env babel-preset-stage-3 --save-dev
+

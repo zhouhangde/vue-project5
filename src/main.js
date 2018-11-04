@@ -3,6 +3,7 @@ import say from './util';
 say();
 
 import Vue from 'vue';
+import './style/common.scss';
 
 var app = new Vue({
   el: '#app',
@@ -10,3 +11,4 @@ var app = new Vue({
     message: 'Hello Vue!'
   }
 });
+
