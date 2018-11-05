@@ -16,7 +16,7 @@ https://segmentfault.com/a/1190000012789253
 
 3命令，安装webpack等
   npm i webpack -g
-  npm i webpack-cli -g
+  npm i webpack-cli -g  
   npm init -y     
   npm i vue --save
   npm i webpack webpack-dev-server --save-dev
@@ -62,3 +62,16 @@ https://segmentfault.com/a/1190000012789253
   },
   npm run start即生产环境
   npm run build为开发环境
+
+  npm i element-ui --save-dev   引入elementui
+  npm i babel-plugin-component --save-dev   引入vue所有已封装组件（包含分页等），可以只引入需要的组件
+  http://element-cn.eleme.io/#/zh-CN/component/quickstart   elementui使用文档
+
+
+  element引入后报错解决
+  https://blog.csdn.net/weixin_41587194/article/details/80275281
+   在webpack.config.js里配置如下
+    {
+    test: /\.(eot|svg|ttf|woff|woff2)$/,
+    loader: 'file-loader'
+    }
