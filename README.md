@@ -77,3 +77,7 @@ https://segmentfault.com/a/1190000012789253
     }
 
    npm install vue-router --save-dev     -安装vue-router 
+  
+   npm install axios --save-dev   --安装跨域插件axios
+   
+   https://www.jb51.net/article/123485.htm    详解vue axios中文文档
