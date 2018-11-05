@@ -75,3 +75,5 @@ https://segmentfault.com/a/1190000012789253
     test: /\.(eot|svg|ttf|woff|woff2)$/,
     loader: 'file-loader'
     }
+
+   npm install vue-router --save-dev     -安装vue-router 

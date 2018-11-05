@@ -11,8 +11,18 @@ Vue.use(Button);
 
 import 'element-ui/lib/theme-chalk/index.css';
 
+import vueRouter from 'vue-router';
+
+import vueRouterConfig from './router/vueRouterConfig.js'
+Vue.use(vueRouter);
+
+const router = new vueRouter({  //实例化router
+  routes:vueRouterConfig
+});
+
 new Vue({
   el: '#app',
   template: '<App/>',
-  components: { App }
+  components: { App },
+  router
 })

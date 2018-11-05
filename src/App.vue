@@ -21,6 +21,10 @@
       <el-button type="warning" disabled>警告按钮</el-button>
       <el-button type="danger" disabled>危险按钮</el-button>
     </el-row>
+
+    <div>
+       <router-view></router-view>
+    </div>
   </div>
 </template>
 
