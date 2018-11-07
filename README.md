@@ -81,3 +81,7 @@ https://segmentfault.com/a/1190000012789253
    npm install axios --save-dev   --安装跨域插件axios
    
    https://www.jb51.net/article/123485.htm    详解vue axios中文文档
+
+   <!-- cannot read property 'name' of undefined的解决 -->
+   https://blog.csdn.net/u010865136/article/details/79374789
+   因为获取服务器是异步的，所以 vue 先绑定数据。绑定数据时，你的lang赋值为空对象的话，而lang里面的 name 属性便为 undefined，所以报"cannot read property 'name' of undefined"。

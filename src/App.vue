@@ -47,9 +47,23 @@ export default {
      async fetchData() {
       const data = await getData();
       this.msg = data;
-    }
+    },
+    get(){
+        this.$http({
+          method:'get',
+          url:'/https://api.coindesk.com/v1/bpi/currentprice.json',
+          data:{}
+        }).then(function(res){
+          console.log(res)
+        }).catch(function(err){
+          console.log(err)
+        })
+        
+      }
   }
 }
+
+
 </script>
 
 <style lang="scss">

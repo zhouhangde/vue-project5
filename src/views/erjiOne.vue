@@ -1,3 +1,5 @@
 <template>
-    <p>erjiOne</p>
+    <div class="erjiOne">
+      <p>erjiOne</p>
+    </div>
 </template>
